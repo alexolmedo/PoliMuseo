@@ -14,8 +14,7 @@ public class TourVirtual extends AppCompatActivity {
         setContentView(R.layout.activity_tour_virtual);
         webViewTour = findViewById(R.id.webviewTour);
         webViewTour.getSettings().setJavaScriptEnabled(true);
-        webViewTour.getSettings().setLoadsImagesAutomatically(true);
-        //webViewTour.getSettings().setAllowFileAccessFromFileURLs(true);
-        webViewTour.loadUrl("http://www.marzipano.net/demos/sample-tour/index.html");
+        webViewTour.getSettings().setAllowFileAccessFromFileURLs(true);
+        webViewTour.loadUrl("file:///android_asset/index.html");
     }
 }
