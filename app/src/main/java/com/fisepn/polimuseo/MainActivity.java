@@ -1,20 +1,21 @@
 package com.fisepn.polimuseo;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.zxing.Result;
-
-import me.dm7.barcodescanner.zxing.ZXingScannerView;
-
 public class MainActivity extends AppCompatActivity {
 
     private Button btn_tourvirtual;
-    private ZXingScannerView vistaescaner;
+
+    private static final int MY_PERMISSION_REQUEST_CAMERA = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,24 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
     public  void Escanear (View view)
     {
-        vistaescaner = new ZXingScannerView(this);
-        vistaescaner.setResultHandler( new xzingscanner());
-        setContentView(vistaescaner);
-        vistaescaner.startCamera();
-    }
-
-    class xzingscanner implements ZXingScannerView.ResultHandler
-    {
-        @Override
-        public void handleResult(Result result) {
-            String dato = result.getText();
-            setContentView(R.layout.activity_main);
-            vistaescaner.stopCamera();
-
-
-            Uri uri = Uri.parse(dato);
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        //Verifica si se tiene el permiso de camara
+        if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED){
+            Intent intent = new Intent(getApplicationContext(), EscanerAudioguia.class);
             startActivity(intent);
+        } else {
+            ActivityCompat.requestPermissions(MainActivity.this,new String[]{Manifest.permission.CAMERA}, MY_PERMISSION_REQUEST_CAMERA);
         }
     }
 

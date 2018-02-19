@@ -21,16 +21,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TourVirtual"
-            android:parentActivityName=".MainActivity" >
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity android:name=".InfoMuseoActivity"
-            android:parentActivityName=".MainActivity" >
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
+        <activity
+            android:name=".TourVirtual"
+            android:label="Tour Virtual"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".InfoMuseoActivity"
+            android:label="Información"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".EscanerAudioguia"
+            android:label="Escáner de códigos QR"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ReproducirAudio"
+            android:parentActivityName=".EscanerAudioguia"
+            android:label="Audio"></activity>
     </application>
 
 </manifest>
