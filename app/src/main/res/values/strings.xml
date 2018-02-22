@@ -5,15 +5,29 @@
     <string name="informacion">Información</string>
 
     <string name="texto0">
-        El Instituto de Ciencias Biológicas de la EPN comprende dos secciones entre las que se encuentra el Museo de Historia Natural Gustavo Orcés V.
+         El Instituto de Ciencias Biológicas de la EPN comprende dos secciones entre las que se encuentra el Museo de Historia Natural Gustavo Orcés V.\n\n
+         Nos dedicamos al estudio de la fauna ecuatoriana; sus inicios se remontan a 1946, con la llegada de la Misión Universitaria Francesa.\n\n
+         Nuestra visión es contribuir al desarrollo científico y cultural, y al uso sustentable de la diversidad biológica.
     </string>
 
-    <string name="texto1">
-        Nos dedicamos al estudio de la fauna ecuatoriana; sus inicios se remontan a 1946, con la llegada de la Misión Universitaria Francesa.
+    <string name="telefono">
+        Telefono: 250 7144
+        \n\text. 2250 / 223 6690
     </string>
 
     <string name="texto2">
-        Nuestra visión es contribuir al desarrollo científico y cultural, y al uso sustentable de la diversidad biológica.
     </string>
 
+    <string name="textoAreas">
+       Sala del pasado \n
+        01) Origen del Universo\n
+        02) Mural dela Evolución\n
+        03) Maquetas de Fauna Pasada\n
+        04) Diorama del Bosque Petrificado de Puyango\n
+        O5) Diorama de Yacimientos de Fósiles\n
+        \n
+        Sala del presente\n
+        06) Dioramas de los Ecosistemas del Ecuador\n
+        07) Acuario y Terrario
+    </string>
 </resources>

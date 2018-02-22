@@ -24,18 +24,23 @@
         <activity
             android:name=".TourVirtual"
             android:label="Tour Virtual"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".InfoMuseoActivity"
             android:label="Información"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".EscanerAudioguia"
             android:label="Escáner de códigos QR"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".ReproducirAudio"
-            android:parentActivityName=".EscanerAudioguia"
-            android:label="Audio"></activity>
+        <activity
+            android:name=".ReproducirAudio"
+            android:label="Audio"
+            android:parentActivityName=".EscanerAudioguia" />
+        <activity android:name=".HistoriaInfoActivity" />
+        <activity android:name=".MapaAreasInfoActivity" />
+        <activity android:name=".ContactoActivity" />
+        <activity android:name=".DireccionActivity"></activity>
     </application>
 
 </manifest>
