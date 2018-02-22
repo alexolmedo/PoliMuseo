@@ -22,7 +22,7 @@ public class DireccionActivity extends AppCompatActivity {
 
     public void cargarLista(){
 
-        lstView = (ListView)findViewById(R.id.listViewInfo);
+        lstView = (ListView)findViewById(R.id.listViewDirec);
         adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1,listViewItems);
         lstView.setAdapter(adapter);
