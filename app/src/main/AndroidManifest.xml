@@ -37,10 +37,18 @@
             android:name=".ReproducirAudio"
             android:label="Audio"
             android:parentActivityName=".EscanerAudioguia" />
-        <activity android:name=".HistoriaInfoActivity" />
-        <activity android:name=".MapaAreasInfoActivity" />
-        <activity android:name=".ContactoActivity" />
-        <activity android:name=".DireccionActivity"></activity>
+        <activity android:name=".HistoriaInfoActivity"
+            android:label="Historia"
+            android:parentActivityName=".InfoMuseoActivity"/>
+        <activity android:name=".MapaAreasInfoActivity"
+            android:label="Mapa de áreas"
+            android:parentActivityName=".InfoMuseoActivity"/>
+        <activity android:name=".ContactoActivity"
+            android:label="Contacto"
+            android:parentActivityName=".InfoMuseoActivity"/>
+        <activity android:name=".DireccionActivity"
+            android:label="Dirección"
+            android:parentActivityName=".InfoMuseoActivity"></activity>
     </application>
 
 </manifest>
